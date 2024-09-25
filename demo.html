@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+        .static{
+            position: static;
+        }
+        .relative{
+            position: relative;
+            /* top: 100px;
+            left: 100px; */
+        }
+        .parent{
+            width: 500px;
+            height: 500px;
+            background-color: bisque;
+            position: relative;
+            top: 200px;
+            left: 100px;
+        }
+        .absolute{
+            position: relative;
+            right: 40px;
+        }
+        .Fixed{
+            position: fixed;
+            top: 0px;
+            left: 150px;
+        }
+        .Sticky{
+            position: sticky;
+            top: 200px;
+        }
+        .box1{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            left: 200px;
+            z-index: 2;
+        }
+        .box2{
+            background-color: green;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            left: 210px;
+            bottom: 100px;
+            z-index: 1;
+        }
+        .box3{
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            left: 220px;
+            bottom: 200px;
+            z-index: 3;
+        }
+        body{
+            background-image: url("https://tse1.mm.bing.net/th?id=OIP.wwxK07x0Umfnh0l-nrjxjgHaDg&pid=Api&P=0&h=180");
+            background-repeat: repeat-x;
+            background-size: contain;
+            background-size: 300px;
+            /* background-clip: border-box; */
+
+        }
+    </style>
+</head>
+<body>
+    <!-- Positions
+        1. Static
+        2. Relative
+        3. Absolute
+        4. Fixed
+        5. Sticky -->
+        <div class="static box">Static</div>
+        <div class="relative box">Relative</div>
+        <div class="parent">
+            <div class="absolute box">Absolute</div>
+        </div>
+        <div class="Fixed box">Fixed</div>
+        <div class="Sticky box">Sticky</div>
+        <div class="static box">Static</div>
+        <div class="static box">Static</div>
+        <div class="static box">Static</div>
+        <div class="static box">Static</div>
+
+        <div class="box1">Box1</div>
+        <div class="box2">Box2</div>
+        <div class="box3">Box3</div>
+</body>
+</html>
